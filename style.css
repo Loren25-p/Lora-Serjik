@@ -116,6 +116,7 @@ body {
   );
 }
 
+
 /* кружок */
 #progress::-webkit-slider-thumb {
   appearance: none;
