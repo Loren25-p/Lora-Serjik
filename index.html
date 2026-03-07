@@ -1,110 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Свадьба Сержа и Лоретты</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Свадьба Сержа и Лоретты</title>
 
-<link rel="icon" href="img/ring.png">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="heroBg"></div>
-<div class="petals"></div>
+    <link rel="icon" href="img/ring.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heroBg"></div>
+    <div class="petals"></div>
 
-<section class="hero">
-  <h1 class="fade-up">Серж & Лоретта</h1>
-  <p class="date fade-up delay-1">27 июня 2026 • 17:00</p>
+    <section class="hero">
+      <h1 class="fade-up">Серж & Лоретта</h1>
+      <p class="date fade-up delay-1">27 июня 2026 • 17:00</p>
 
-  <div class="music-center fade-up delay-2">
-    <audio id="bgMusic">
-      <source src="assets/audio/track_1.m4a" type="audio/mp4">
-    </audio>
-    <button id="playPause" class="music-btn">▶</button>
-  </div>
-</section>
+      <div class="music-center fade-up delay-2">
+        <audio id="bgMusic">
+          <source src="assets/audio/track_1.m4a" type="audio/mp4" />
+        </audio>
+        <button id="playPause" class="music-btn">▶</button>
+      </div>
+    </section>
 
-<section class="invitation">
-  <h2 class="fade-up">ДОРОГОЙ ГОСТЬ</h2>
-  <p class="fade-up delay-1">
-    Приглашаем вас разделить радость этого особенного
-    для нас события и стать частью начала
-    нашей семейной истории.
-  </p>
-  <div class="sign fade-up delay-2">Серж и Лоретта</div>
-</section>
+    <section class="invitation">
+      <h2 class="fade-up">ДОРОГОЙ ГОСТЬ</h2>
+      <p class="fade-up delay-1">
+        Приглашаем вас разделить радость этого особенного для нас события и
+        стать частью начала нашей семейной истории.
+      </p>
+      <div class="sign fade-up delay-2">Серж и Лоретта</div>
+    </section>
 
-<!-- Хаотичные фото -->
-<div class="photo-layer">
-  <div class="polaroid p1"><img src="img/photo_1.jpg"></div>
-  <div class="polaroid p2"><img src="img/photo_2.jpg"></div>
-  <div class="polaroid p3"><img src="img/photo_3.jpg"></div>
-  <div class="polaroid p4"><img src="img/photo_4.jpg"></div>
-  <div class="polaroid p5"><img src="img/photo_5.jpg"></div>
-  <div class="polaroid p6"><img src="img/photo_6.jpg"></div>
-</div>
-
-<section class="calendar-section">
-  <div class="calendar fade-scale">
-    <div class="calendar-top">ИЮНЬ</div>
-    <div class="calendar-day">27</div>
-    <div class="calendar-year">2026</div>
-  </div>
-</section>
-
-<section class="countdown">
-  <h2 class="fade-up">До свадьбы осталось</h2>
-  <div class="timer fade-up delay-1">
-    <div><span id="days">0</span><small>дней</small></div>
-    <div><span id="hours">0</span><small>часов</small></div>
-    <div><span id="minutes">0</span><small>минут</small></div>
-    <div><span id="seconds">0</span><small>секунд</small></div>
-  </div>
-</section>
-
-<section class="rsvp">
-  <h2>Подтвердите присутствие</h2>
-
-  <form action="https://formsubmit.co/lorap989@gmail.com" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_subject" value="Ответ на приглашение 💍">
-
-    <input type="text" name="Имя" placeholder="Ваше имя" required>
-    <select name="Ответ" required>
-      <option value="">Вы придете?</option>
-      <option>Да, с радостью!</option>
-      <option>К сожалению, нет</option>
-    </select>
-
-    <button type="submit">Отправить</button>
-  </form>
-  <section class="location">
-  <h2 class="fade-up">Место проведения</h2>
-
-  <div class="location-box fade-up delay-1">
-    <div class="location-info">
-      <h3>Royal Rose</h3>
-      <p>Ташкент, Узбекистан</p>
-      <a href="https://www.google.com/maps/search/Royal+Rose+Tashkent"
-         target="_blank"
-         class="map-btn">
-         Открыть в Google Maps
-      </a>
+    <!-- Хаотичные фото -->
+    <div class="photo-layer">
+      <div class="polaroid p1"><img src="img/photo_1.jpg" /></div>
+      <div class="polaroid p2"><img src="img/photo_2.jpg" /></div>
+      <div class="polaroid p3"><img src="img/photo_3.jpg" /></div>
+      <div class="polaroid p4"><img src="img/photo_4.jpg" /></div>
+      <div class="polaroid p5"><img src="img/photo_5.jpg" /></div>
+      <div class="polaroid p6"><img src="img/photo_6.jpg" /></div>
     </div>
 
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps?q=Royal+Rose+Tashkent&output=embed"
-        loading="lazy"
-        allowfullscreen>
-      </iframe>
+    <section class="calendar-section">
+      <div class="calendar fade-scale">
+        <div class="calendar-top">ИЮНЬ</div>
+        <div class="calendar-day">27</div>
+        <div class="calendar-year">2026</div>
+      </div>
+    </section>
+
+    <section class="countdown">
+      <h2 class="fade-up">До свадьбы осталось</h2>
+      <div class="timer fade-up delay-1">
+        <div><span id="days">0</span><small>дней</small></div>
+        <div><span id="hours">0</span><small>часов</small></div>
+        <div><span id="minutes">0</span><small>минут</small></div>
+        <div><span id="seconds">0</span><small>секунд</small></div>
+      </div>
+    </section>
+
+    
+    
+    <section class="location">
+      <h2 class="fade-up">Место проведения</h2>
+      
+      <div class="location-box fade-up delay-1">
+        <div class="location-info">
+          <h3>Royal Rose</h3>
+            <p>Ташкент, Узбекистан</p>
+            <a
+            href="https://www.google.com/maps/search/Royal+Rose+Tashkent"
+            target="_blank"
+            class="map-btn"
+            >
+            Открыть в Google Maps
+          </a>
+        </div>
+        
+        <div class="map">
+          <iframe
+          src="https://www.google.com/maps?q=Royal+Rose+Tashkent&output=embed"
+          loading="lazy"
+          allowfullscreen
+          >
+        </iframe>
+      </div>
     </div>
-  </div>
-</section>
+    <section class="rsvp">
+      <h2>Подтвердите присутствие</h2>
 
-</section>
+      <form action="https://formsubmit.co/lorap989@gmail.com" method="POST">
+        <input
+          type="hidden"
+          name="_next"
+          value="https://loren25-p.github.io/Lora-Serjik/index.html"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_subject" value="Ответ на приглашение 💍" />
 
-<script src="script.js"></script>
-</body>
+        <input type="text" name="Имя" placeholder="Ваше имя" required />
+
+        <select name="Ответ" required>
+          <option value="">Вы придете?</option>
+          <option>Да, с радостью!</option>
+          <option>К сожалению, нет</option>
+        </select>
+
+        <button type="submit">Отправить</button>
+      </form>
+      </section>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
 </html>
