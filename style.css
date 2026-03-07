@@ -7,7 +7,7 @@
 body {
   font-family: "Cormorant Garamond", serif;
   background: #f8f4ef;
-  color: #2b2b2b;
+  color: #ffffff;
   overflow-x: hidden;
   position: relative;
 }
@@ -65,8 +65,20 @@ body {
 }
 
 /* HERO */
+
+.heroBg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url(img/photo_4.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
 .hero {
-  height: 100vh;
+  
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +94,7 @@ body {
 }
 .date {
   margin-top: 20px;
-  font-size: 22px;
+  font-size: 30px;
   opacity: 0.7;
 }
 
@@ -103,7 +115,7 @@ body {
 /* INVITATION */
 .invitation {
   max-width: 650px;
-  margin: 140px auto;
+  margin: 50px auto;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -128,10 +140,11 @@ body {
 .polaroid {
   position: absolute;
   width: 220px;
-  background: white;
+  background: rgba(255, 255, 255, 0.485);
   padding: 12px 12px 35px;
   border-radius: 8px;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  opacity: 0.7;
 }
 .polaroid img {
   width: 100%;
@@ -177,22 +190,27 @@ body {
 }
 .calendar {
   display: inline-block;
-  background: white;
+  background: rgba(246, 239, 227, 0.875);
   padding: 40px 70px;
   border-radius: 24px;
   box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);
 }
 .calendar-top {
   background: linear-gradient(90deg, #b9935a, #d4af7a);
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 10px 30px;
   margin-bottom: 20px;
+  border-radius: 12px;
+  margin: 10px 0;
 }
 .calendar-day {
   font-size: 90px;
+  color: #111111;
 }
 .calendar-year {
   opacity: 0.6;
+  font-size: 20px;
+  color: #000000;
 }
 
 /* COUNTDOWN */
@@ -212,13 +230,13 @@ body {
 
 /* RSVP */
 .rsvp {
-  padding: 140px 20px;
+  padding: 140px 0px;
   text-align: center;
   position: relative;
   z-index: 2;
 }
 .rsvp form {
-  max-width: 400px;
+  max-width: 300px;
   margin: 40px auto 0;
   display: flex;
   flex-direction: column;
@@ -266,7 +284,7 @@ button {
 .location-info {
   flex: 1;
   min-width: 280px;
-  text-align: left;
+  text-align: center;
 }
 
 .location-info h3 {
@@ -322,6 +340,9 @@ button {
   }
 
   .location-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
@@ -333,7 +354,7 @@ button {
 /* MOBILE */
 @media (max-width: 900px) {
   .hero h1 {
-    font-size: 36px;
+    font-size: 56px;
   }
   .polaroid {
     width: 140px;
