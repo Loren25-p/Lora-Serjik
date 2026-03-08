@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serge & Loretta Wedding</title>
+
+    <link rel="icon" href="img/ring.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="lang-switch">
+      <a href="index.html">RU</a>
+      <a href="index-en.html" class="active">EN</a>
+    </div>
+
+    <div class="heroBg"></div>
+    <div class="petals"></div>
+
+    <section class="hero">
+      <h1 class="fade-up">Serge & Loretta</h1>
+      <p class="date fade-up delay-1">June 27, 2026 • 17:00</p>
+
+      <div class="music-center fade-up delay-2">
+        <audio id="bgMusic">
+          <source src="assets/audio/track_1.m4a" type="audio/mp4" />
+        </audio>
+        <button id="playPause" class="music-btn" type="button">▶</button>
+      </div>
+    </section>
+
+    <section class="invitation">
+      <h2 class="fade-up">DEAR GUEST</h2>
+      <p class="fade-up delay-1">
+        We invite you to share the joy of this special day and become part of
+        the beginning of our family story.
+      </p>
+      <div class="sign fade-up delay-2">Serge & Loretta</div>
+    </section>
+
+    <div class="photo-layer">
+      <div class="polaroid p1"><img src="img/photo_1.jpg" alt="Photo 1" /></div>
+      <div class="polaroid p2"><img src="img/photo_2.jpg" alt="Photo 2" /></div>
+      <div class="polaroid p3"><img src="img/photo_3.jpg" alt="Photo 3" /></div>
+      <div class="polaroid p4"><img src="img/photo_4.jpg" alt="Photo 4" /></div>
+      <div class="polaroid p5"><img src="img/photo_5.jpg" alt="Photo 5" /></div>
+      <div class="polaroid p6"><img src="img/photo_6.jpg" alt="Photo 6" /></div>
+    </div>
+
+    <section class="calendar-section">
+      <div class="calendar fade-scale">
+        <div class="calendar-top">JUNE</div>
+        <div class="calendar-day">27</div>
+        <div class="calendar-year">2026</div>
+      </div>
+    </section>
+
+    <section class="countdown">
+      <h2 class="fade-up">Wedding Countdown</h2>
+      <div class="timer fade-up delay-1">
+        <div><span id="days">0</span><small>days</small></div>
+        <div><span id="hours">0</span><small>hours</small></div>
+        <div><span id="minutes">0</span><small>minutes</small></div>
+        <div><span id="seconds">0</span><small>seconds</small></div>
+      </div>
+    </section>
+
+    <section class="location">
+      <h2 class="fade-up">Venue</h2>
+
+      <div class="location-box fade-up delay-1">
+        <div class="location-info">
+          <h3>Royal Rose</h3>
+          <p>Tashkent, Uzbekistan</p>
+          <a
+            href="https://www.google.com/maps/search/Royal+Rose+Tashkent"
+            target="_blank"
+            class="map-btn"
+          >
+            Open in Google Maps
+          </a>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps?q=Royal+Rose+Tashkent&output=embed"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="rsvp">
+      <h2>RSVP</h2>
+
+      <form action="https://formsubmit.co/lorap989@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_subject" value="Wedding RSVP 💍" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://loren25-p.github.io/Lora-Serjik/"
+        />
+
+        <input type="text" name="Name" placeholder="Your name" required />
+
+        <select name="Response" required>
+          <option value="" disabled selected>Will you attend?</option>
+          <option value="Yes, with pleasure!">Yes, with pleasure!</option>
+          <option value="Unfortunately, no">Unfortunately, no</option>
+        </select>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

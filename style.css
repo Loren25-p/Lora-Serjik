@@ -12,6 +12,68 @@ body {
   position: relative;
 }
 
+/* language */
+
+.lang-switch {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.lang-switch a {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.15);
+  color: white;
+  text-decoration: none;
+  backdrop-filter: blur(4px);
+}
+
+.lang-switch a.active {
+  background: linear-gradient(90deg, #b9935a, #d4af7a);
+  border: none;
+}
+
+
+.lang-switch {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+
+.lang-switch a {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  text-decoration: none;
+  backdrop-filter: blur(4px);
+  transition: 0.3s;
+}
+
+.lang-switch a:hover {
+  transform: translateY(-2px);
+}
+
+.lang-switch a.active {
+  background: linear-gradient(90deg, #b9935a, #d4af7a);
+  border: none;
+}
+
+.lang-switch a.active {
+  background: linear-gradient(90deg, #b9935a, #d4af7a);
+  border: none;
+}
+
+
+/* language */
+
 /* ЛЕПЕСТКИ */
 .petals {
   position: fixed;
@@ -73,11 +135,10 @@ body {
   background: url(img/photo_4.jpg);
   background-size: cover;
   background-position: center;
-  opacity: 0.7;
+  /* opacity: 0.9; */
 }
 
 .hero {
-  
   height: 60vh;
   display: flex;
   flex-direction: column;
@@ -150,6 +211,14 @@ body {
   width: 100%;
   border-radius: 4px;
 }
+
+/* p {
+  font-family: "Great Vibes", cursive;
+} */
+/* h2 {
+  font-family: "Great Vibes", cursive;
+} */
+
 .p1 {
   top: 200px;
   left: 5%;

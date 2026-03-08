@@ -48,3 +48,21 @@ setInterval(()=>{
   document.getElementById("seconds").textContent=
     Math.floor((d%(1000*60))/1000);
 },1000);
+
+
+// LANGUAGE
+
+const links = document.querySelectorAll(".lang-switch a");
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+links.forEach(link => {
+  const href = link.getAttribute("href");
+
+  // Сначала убираем active у всех
+  link.classList.remove("active");
+
+  // Потом ставим только нужной
+  if (href === currentPage) {
+    link.classList.add("active");
+  }
+});
